@@ -73,7 +73,7 @@ try{
 	}
 	
 	if($doUpLog){
-		file_put_contents("upload.log",$ex->Message."\r\n", FILE_APPEND);
+		file_put_contents("upload.log",$ex->getMessage()."\r\n", FILE_APPEND);
 	}
 	
 	unlink($temp_file);

@@ -118,7 +118,7 @@ class Test
 				$f->Reason = "Error calling FixtureInitialize";
 				$f->Exception = $ex;
 				$f->StackTrace = Test::_getStackTrace($ex);
-				return f;
+				return $f;
 			}
 		}
 		$allTests = Test::_findMethodsStartingWith("DoTest",$mts);
