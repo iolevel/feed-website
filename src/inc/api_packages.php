@@ -322,4 +322,3 @@ class PackagesApi extends SmallTextDbApiBase
 		return $r;
 	}
 }
-?>

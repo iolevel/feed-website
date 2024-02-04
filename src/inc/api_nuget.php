@@ -522,4 +522,3 @@ class ApiNugetBaseV2 extends ApiNugetBase
 		$this->_initialize($path,"v2");
 	}
 }
-?>

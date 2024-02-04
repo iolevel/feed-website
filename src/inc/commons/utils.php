@@ -140,5 +140,3 @@ function array_insert(&$array,$element,$position=null) {
   $array = array_merge($array);
   return $array;
 }
-
-?>
