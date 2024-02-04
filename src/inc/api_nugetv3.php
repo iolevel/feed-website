@@ -116,4 +116,3 @@ class ApiNugetBaseV3
 		$this->_db = new NuGetDb();
 	}
 }
-?>

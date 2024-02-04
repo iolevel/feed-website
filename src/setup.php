@@ -21,4 +21,3 @@ if(!UrlUtils::ExistRequestParam("dosetup")){
 }*/else{
 	die("Error");
 }
-?>
