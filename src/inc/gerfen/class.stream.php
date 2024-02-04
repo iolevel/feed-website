@@ -15,7 +15,7 @@
 class stream
 {
 	/**
-	 * @var input
+	 * @var $input
 	 * @abstract Raw input stream
 	 */
 	protected $input;
@@ -244,7 +244,7 @@ class stream
 			'file' => array()
 		);
 
-		if (count($array['post'] > 0)) {
+		if (count($array['post'])) {
 			foreach($array['post'] as $key => $value) {
 				foreach($value as $k => $v) {
 					if (is_array($v)) {
@@ -258,7 +258,7 @@ class stream
 			}
 		}
 
-		if (count($array['file'] > 0)) {
+		if (count($array['file'])) {
 			foreach($array['file'] as $key => $value) {
 				$results['file'][$key] = $value;
 				/*foreach($value as $k => $v) {
