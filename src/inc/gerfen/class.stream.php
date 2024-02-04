@@ -47,7 +47,7 @@ class stream
 
 	/**
 	 * @function boundary
-	 * @returns Array
+	 * @return array
 	 */
 	private function boundary()
 	{
@@ -57,7 +57,7 @@ class stream
 
 	/**
 	 * @function parse
-	 * @returns Array
+	 * @return array
 	 */
 	private function parse()
 	{
@@ -68,7 +68,7 @@ class stream
 	/**
 	 * @function split
 	 * @param $boundary string
-	 * @returns Array
+	 * @return array
 	 */
 	private function split($boundary)
 	{
@@ -81,7 +81,7 @@ class stream
 	/**
 	 * @function blocks
 	 * @param $array array
-	 * @returns Array
+	 * @return array
 	 */
 	private function blocks($array)
 	{
@@ -111,7 +111,7 @@ class stream
 	/**
 	 * @function decide
 	 * @param $string string
-	 * @returns Array
+	 * @return array
 	 */
 	private function decide($string)
 	{
@@ -140,7 +140,7 @@ class stream
 	/**
 	 * @function file
 	 * @param $boundary string
-	 * @returns Array
+	 * @return array
 	 */
 	private function file($string)
 	{
@@ -179,7 +179,7 @@ class stream
 	/**
 	 * @function file_stream
 	 * @param $boundary string
-	 * @returns Array
+	 * @return array
 	 */
 	private function file_stream($string)
 	{
@@ -212,7 +212,7 @@ class stream
 	/**
 	 * @function post
 	 * @param $boundary string
-	 * @returns Array
+	 * @return array
 	 */
 	private function post($string)
 	{
@@ -235,7 +235,7 @@ class stream
 	 *
 	 * Ugly ugly ugly
 	 *
-	 * @returns Array
+	 * @return array
 	 */
 	private function merge($array)
 	{
