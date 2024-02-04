@@ -131,4 +131,3 @@ function nugetDbUserBuilder()
 {
 return new UserEntity();
 }
-?>

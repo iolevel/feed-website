@@ -41,7 +41,7 @@ class UrlUtils
 		$queryIndex = indexOf($url,"?");
 		if($queryIndex>0){
 			$query = substr($url,$queryIndex+1);
-			UrlUtils::$_query = parse_str($query);
+			parse_str($query, UrlUtils::$_query);
 		}
 		UrlUtils::$_fake = true;
 	}
@@ -182,4 +182,3 @@ class UrlUtils
 	}
 }
 UrlUtils::StaticInitialize();
-?>

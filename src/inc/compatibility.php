@@ -1,6 +1,5 @@
 <?php
 
-
 if (!function_exists('http_response_code')) {
     function http_response_code($code = NULL)
     {
@@ -121,7 +120,6 @@ if (!function_exists('http_response_code')) {
                     break;
                 default:
                     exit('Unknown http status code "' . htmlentities($code) . '"');
-                    break;
             }
 
             $protocol = (isset($_SERVER['SERVER_PROTOCOL']) ? $_SERVER['SERVER_PROTOCOL'] : 'HTTP/1.0');
@@ -132,7 +130,7 @@ if (!function_exists('http_response_code')) {
 
         } else {
 
-            $code = (isset($GLOBALS['http_response_code']) ? $GLOBALS['http_response_code'] : 200);
+            $code = $GLOBALS['http_response_code'] ?? 200;
 
         }
 
@@ -140,5 +138,3 @@ if (!function_exists('http_response_code')) {
 
     }
 }
-
-?>
