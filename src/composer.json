@@ -9,6 +9,6 @@
 	}
 	],
     "require": {
-		"forxer/Gravatar": "~2.0"
+		"forxer/gravatar": "~2.0"
 	}
 }
